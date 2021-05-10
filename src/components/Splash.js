@@ -53,6 +53,31 @@ const SplashText = styled.span`
         text-align: left;
         transform: translateX(-10px);
     }
+
+    @media screen and (max-width: 1240px) {
+        font-size: 20em;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 15em;
+        &:nth-child(1) {
+            transform: translateX(5px);
+        }
+        &:nth-child(2) {
+            transform: translateX(-5px);
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        font-size: 8em;
+        letter-spacing: -3px;
+        &:nth-child(1) {
+            transform: translateX(3px);
+        }
+        &:nth-child(2) {
+            transform: translateX(-3px);
+        }
+    }
 `
 
 function Splash() {
