@@ -95,7 +95,7 @@ function App() {
   const handleStateClick = (e) => {
     let state = e.target.parentElement.id
     setStateDetails({loading: true, stateTitle: state, data:[]});
-    fetch(`https://api.covidactnow.org/v2/county/${state}.json?apiKey=${process.env.REACT_APP_COVID_KEY}`)
+    fetch(`https://api.covidactnow.org/v2/county/${state}.json?apiKey=2da0a1609c10427689d089e1240087fa`)
       .then(response => response.json())
       .then(data => setStateDetails({
         loading: false,
