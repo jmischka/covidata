@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled from 'styled-components';
 
-const HeaderStyles = styled.div`
+const HeaderStyles = styled.header`
     position: fixed;
     margin: 0 0 0 0;
     left: 0;
@@ -14,24 +15,27 @@ const HeaderStyles = styled.div`
     z-index: 100;
     &:hover {
         background-color: #EA2E49;
-        p {
+        a {
             color: #F4ABAB;
         }
     }
 
-    p {
+    a {
+        display: block;
         font-size: 1.6em;
+        font-weight: 700;
         line-height: 1;
         color: white;
         text-align: center;
         text-transform: uppercase;
+        text-decoration: none;
     }
 `
 
 function Header(props) {
     return(
-        <HeaderStyles onClick={props.scrollTopClick}>
-            <p>Return to Top &#8593;</p>
+        <HeaderStyles>
+            <Link to="/">COVIDATA</Link>
         </HeaderStyles>
     )
 }

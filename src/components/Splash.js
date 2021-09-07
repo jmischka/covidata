@@ -85,7 +85,7 @@ function Splash() {
         <SplashStyles>
             <SplashText>COVI</SplashText>
             <SplashText>DATA</SplashText>
-            <p>Deciding where to go this summer? COVIDATA tracks <span>COVID-19</span> numbers in The United States</p>
+            <p>COVIDATA tracks <span>COVID-19</span> numbers across every state in The United States</p>
             <p className="tagline">COVIDATA uses data from Covid Act Now, an independent nonprofit founded by volunteers in March 2020.</p>
         </SplashStyles>
     )
